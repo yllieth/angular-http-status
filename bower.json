@@ -1,0 +1,22 @@
+{
+  "name": "angular-http-status",
+  "version": "0.1.0",
+  "authors": [ "Yllieth <sylvnimes@hotmail.com>" ],
+  "description": "Convenience constant and factory to deal with HTTP status code",
+  "keywords": [ "angular", "http", "status", "code" ],
+  "private": false,
+  "license": "DBAD",
+  "dependencies": {
+    "angular": ">=1.x"
+  },
+  "main": "angular-http-status.js",
+  "ignore": [
+    ".*",
+    "bower.json",
+    "package.json",
+    "app/",
+    "test/",
+    "bower_components/",
+    "node_modules/"
+  ]
+}
