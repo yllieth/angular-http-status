@@ -1,5 +1,7 @@
 # angular-http-status
 
+> Demo: http://yllieth.github.io/angular-http-status/app/index.html
+
 Angular stuff to easily convert status text into its HTTP code and _vice versa_.
  
 I only care about _real_ Http statuses, so I used the list from 
