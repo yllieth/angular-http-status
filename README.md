@@ -5,7 +5,7 @@
 Angular stuff to easily convert status text into its HTTP code and _vice versa_.
  
 I only care about _real_ Http statuses, so I used the list from 
-http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml where each code is attached to a (RFC)[https://github.com/yllieth/angular-http-status/blob/master/angular-http-status.js].
+http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml where each code is attached to a [RFC](https://github.com/yllieth/angular-http-status/blob/master/angular-http-status.js).
 
 ## Installation
 
