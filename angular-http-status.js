@@ -4,6 +4,8 @@ angular
     CONTINUE: 100,                        // RFC7231 @6.2.1 : https://tools.ietf.org/html/rfc7231#section-6.2.1
     SWITCHING_PROTOCOLS: 101,             // RFC7231 @6.2.2 : https://tools.ietf.org/html/rfc7231#section-6.2.2
     PROCESSING: 102,                      // RFC2518        : https://tools.ietf.org/html/rfc2518
+    HEURISTIC_EXPIRATION: 113,            // RFC7234 @5.5.4 : https://tools.ietf.org/html/rfc7234#section-5.5.4
+    MISCELLANEOUS_WARNING: 199,           // RFC7234 @5.5.5 : https://tools.ietf.org/html/rfc7234#section-5.5.5
 
     OK: 200,                              // RFC7231 @6.3.1 : https://tools.ietf.org/html/rfc7231#section-6.3.1
     CREATED: 201,                         // RFC7231 @6.3.2 : https://tools.ietf.org/html/rfc7231#section-6.3.2
@@ -14,7 +16,9 @@ angular
     PARTIAL_CONTENT: 206,                 // RFC7233 @4.1   : https://tools.ietf.org/html/rfc7233#section-4.1
     MULTI_STATUS: 207,                    // RFC4918        : https://tools.ietf.org/html/rfc4918
     ALREADY_REPORTED: 208,                // RFC5842        : https://tools.ietf.org/html/rfc5842
+    TRANSFORMATION_APPLIED: 214,          // RFC7234 @5.5.6 : https://tools.ietf.org/html/rfc7234#section-5.5.6
     IM_USED: 226,                         // RFC3239        : https://tools.ietf.org/html/rfc3239
+    MISCELLANEOUS_PERSISTENT_WARNING: 299,// RFC7234 @5.5.7 : https://tools.ietf.org/html/rfc7234#section-5.5.7
 
     MULTIPLE_CHOICES: 300,                // RFC7231 @6.4.1 : https://tools.ietf.org/html/rfc7231#section-6.4.1
     MOVED_PERMANENTLY: 301,               // RFC7231 @6.4.2 : https://tools.ietf.org/html/rfc7231#section-6.4.2
