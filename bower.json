@@ -1,6 +1,6 @@
 {
   "name": "angular-http-status",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [ "Yllieth <sylvnimes@hotmail.com>" ],
   "description": "Convenience constant and factory to deal with HTTP status code",
   "keywords": [ "angular", "http", "status", "code" ],
