@@ -81,17 +81,23 @@ angular
 
         var statusName = '';
         var keys = Object.keys(HttpCodes);
-
-        for (var i = 0 ; i < keys.length ; i++) {
-          if (HttpCodes[keys[i]] === status) {
-            statusName = keys[i].replace('_', ' ').toLowerCase();
-            break;
-          }
+        for (var i = 0; i < keys.length; i++) {
+            if (HttpCodes[keys[i]] === status) {
+                statusName = keys[i];
+                break;
+            }
         }
-
-        return (statusName.length > 0)
-          ? statusName[0].toUpperCase() + statusName.substr(1)
-          : undefined;
+        if (statusName !== '') {
+            var words = statusName.split('_');
+            statusName = '';
+            for (var w = 0; w < words.length; w++) {
+                var word = words[w];
+                if (word.length > 1) {
+                    statusName += word[0] + word.substr(1).toLowerCase() + ' ';
+                }
+            }
+        }
+        return statusName.length > 0 ? statusName.trim(): undefined;
       }
     };
   }]);
