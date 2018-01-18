@@ -73,31 +73,38 @@ angular
     NETWORK_AUTHENTICATION_REQUIRED: 511  // RFC6585         : https://tools.ietf.org/html/rfc6585
   })
   .factory('HttpStatus', ['HttpCodes', function(HttpCodes) {
+    /**
+     * Format status into a human readable version
+     *
+     * @see https://stackoverflow.com/questions/2332811/capitalize-words-in-string
+     * @param {String} status
+     * @example
+     * Input:  "MISCELLANEOUS_PERSISTENT_WARNING"
+     * Output: "Miscellaneous Persistent Warning"
+     * @returns {String}
+     */
+    var formatStatus = function(status) {
+      return status
+        .toLowerCase()
+        .replace(/_/g, ' ')
+        .replace(/(^|\s)\S/g, function(firstLetter) { return firstLetter.toUpperCase() });
+    };
+
     return {
       toString: function(status) {
         if (angular.isNumber(status) === false) {
           throw new TypeError(status + ' is not a number and obviously not a valid HTTP status code.')
         }
 
-        var statusName = '';
         var keys = Object.keys(HttpCodes);
-        for (var i = 0; i < keys.length; i++) {
-            if (HttpCodes[keys[i]] === status) {
-                statusName = keys[i];
-                break;
-            }
+
+        for (var i = 0 ; i < keys.length ; i++) {
+          if (HttpCodes[keys[i]] === status) {
+            return formatStatus(keys[i]);
+          }
         }
-        if (statusName !== '') {
-            var words = statusName.split('_');
-            statusName = '';
-            for (var w = 0; w < words.length; w++) {
-                var word = words[w];
-                if (word.length > 1) {
-                    statusName += word[0] + word.substr(1).toLowerCase() + ' ';
-                }
-            }
-        }
-        return statusName.length > 0 ? statusName.trim(): undefined;
+
+        return undefined;
       }
     };
   }]);
