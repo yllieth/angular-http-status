@@ -1,0 +1,24 @@
+{
+  "name": "angular-http-status",
+  "version": "0.1.2",
+  "description": "AngularJS stuff to easily convert status text into its HTTP code and vice versa",
+  "main": "angular-http-status.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yllieth/angular-http-status.git"
+  },
+  "keywords": [
+    "angularjs",
+    "http-code"
+  ],
+  "author": "Sylvain RAGOT <sylvnimes@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yllieth/angular-http-status/issues"
+  },
+  "homepage": "https://github.com/yllieth/angular-http-status#readme"
+}
