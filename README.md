@@ -15,14 +15,24 @@ http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml where 
 bower install angular-http-status --save
 ```
 
-Once the lib is downloaded, 
-
-1. add a reference in your index.html 
+Once the lib is downloaded, add a reference in your index.html
 
     `<script type="application/javascript" src="../bower_components/angular-http-status/angular-http-status.js"></script>`
-    
-2. add the module in your angular application
-    
+
+### NPM
+
+```
+npm install angular-http-status --save
+```
+
+Once the lib is downloaded, add a reference in your index.html
+
+    `<script type="application/javascript" src="node_modules/angular-http-status/angular-http-status.js"></script>`
+
+## Usage
+
+### Add a new dependency to your angular application:
+
     ```
     angular
       .module('YOUR-ANGULAR-APP-NAME', [
@@ -31,13 +41,9 @@ Once the lib is downloaded,
       .config(...
     ```
 
-3. enjoy!
-
-## Usage
-
 ### The `HttpCodes` constant
 
-It's a _big_ object with status text as keys and status codes as values, like:
+It's an object with status text as keys and status codes as values, like:
 
 ```json
 {
@@ -89,10 +95,6 @@ angular
     }
   });
 ```
-
-# License
-
-DBAD. See the [LICENSE](https://github.com/yllieth/angular-http-status/blob/master/LICENSE.md) for more details.
 
 # Contributing
 
